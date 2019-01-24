@@ -22,6 +22,7 @@ export default (editor, opts = {}) => {
     labelTraitPlaceholder: 'Placeholder',
     labelTraitValue: 'Value',
     labelTraitRequired: 'Required',
+    labelTraitDisabled: 'Disabled',
     labelTraitType: 'Type',
     labelTraitOptions: 'Options',
     labelTraitChecked: 'Checked',

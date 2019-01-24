@@ -43,6 +43,12 @@ export default function(editor, opt = {}) {
     label: c.labelTraitRequired,
   };
 
+  const disabledTrait = {
+    type: 'checkbox',
+    name: 'disabled',
+    label: c.labelTraitDisabled
+  };
+
   const checkedTrait = {
     label: c.labelTraitChecked,
     type: 'checkbox',
@@ -203,7 +209,9 @@ export default function(editor, opt = {}) {
               {value: 'password', name: c.labelTypePassword},
               {value: 'number', name: c.labelTypeNumber},
             ]
-          }, requiredTrait
+          },
+          requiredTrait,
+          disabledTrait
         ],
       },
     }, {
@@ -233,7 +241,8 @@ export default function(editor, opt = {}) {
         traits: [
           nameTrait,
           placeholderTrait,
-          requiredTrait
+          requiredTrait,
+          disabledTrait
         ]
       },
     }, {
@@ -262,7 +271,8 @@ export default function(editor, opt = {}) {
             label: c.labelTraitOptions,
             type: 'select-options'
           },
-          requiredTrait
+          requiredTrait,
+          disabledTrait
         ],
       },
     }, {

@@ -15,3 +15,5 @@ coverage/
 node_modules/
 bower_components/
 _index.html
+
+.idea/*
