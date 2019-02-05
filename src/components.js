@@ -208,6 +208,9 @@ export default function(editor, opt = {}) {
               {value: 'email', name: c.labelTypeEmail},
               {value: 'password', name: c.labelTypePassword},
               {value: 'number', name: c.labelTypeNumber},
+              {value: 'file', name: c.labelTypeFile},
+              {value: 'radio', name: c.labelTypeRadio},
+              {value: 'checkbox', name: c.labelTypeCheckbox},
             ]
           },
           requiredTrait,
